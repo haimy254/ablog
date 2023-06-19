@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
-{% block content %}
+{% block title %}{{post.title}} {%endblock%}
+
+{%block content%}
 
     <h3>{{post.title}}</h3>
     <small> By: {{post.author.first_name}} {{post.author.last_name}}</small><br/>
