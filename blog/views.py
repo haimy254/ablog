@@ -10,6 +10,7 @@ from django.urls import reverse_lazy
 class HomeView(ListView):
     model = Post
     template_name = 'home.html'
+    ordering = ['-id'] #displays according to the order, the last one to be displayed will be at the top
 
 class ArticleView(DetailView):
     model = Post
