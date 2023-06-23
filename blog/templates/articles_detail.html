@@ -4,7 +4,9 @@
 {%block content%}
 
     <h3>{{post.title}}</h3>
-    <small> By: {{post.author.first_name}} {{post.author.last_name}}</small><br/>
+    <small> By: {{post.author.first_name}} {{post.author.last_name}} 
+         </small><br/>
+         <p> Posted on: {{post.post_date}} </p>   
     <hr>
     {{post.body}}
 
