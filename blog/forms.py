@@ -10,5 +10,5 @@ class PostForm(forms.ModelForm):
             'title_tag':forms.TextInput(attrs={'class': 'form-control'}),
             'author':forms.Select(attrs={'class': 'form-control'}),
             'body':forms.Textarea(attrs={'class': 'form-control'}),
-
+            
         }

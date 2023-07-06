@@ -9,6 +9,7 @@ class Post(models.Model):
     title_tag = models.CharField(max_length=255, default="Post")
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     body = models.TextField()
+    # image = models.ImageField(default="")
     post_date = models.DateField(auto_now_add=True)
 
     def __str__(self):
